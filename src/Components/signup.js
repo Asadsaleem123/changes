@@ -146,7 +146,7 @@ function Signup() {
                         </div>
 
                         <div id="email" className="w-1/2 mr-1">
-                            <label htmlFor="email" className="text-sm">{t('Email')}</label><br />
+                            <label htmlFor="email" className="text-sm">{t('email')}</label><br />
                             <input type="text" name="email" id="email"onChange={(e)=>handle(e)} 
                                 className="h-8 w-full rounded-md border border-slate-300 text-sm pl-2 bg-transparent outline-blue-600 shadow-sm" required />
                                 

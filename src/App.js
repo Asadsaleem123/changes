@@ -64,8 +64,8 @@ class App extends Component {
         <Footer data={this.state.resumeData.main} />
         */}
         
-        {/* <Header data={this.state.resumeData.main} /> */}
-     
+        {/* { <Header data={this.state.resumeData.main} /> }
+      */}
        <Routes>
         <Route exact path="/contact"element={<Contact data={this.state.resumeData.main}/>}/>
         <Route exact path="/portfolio"element={<Portfolio data={this.state.resumeData.portfolio}/>}/>
