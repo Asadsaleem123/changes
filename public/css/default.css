@@ -797,31 +797,71 @@ properly.
 	margin-right: auto !important;
 	text-align: center !important;
 }
-.wrapper {
-   display: flex;
-   width: 100%;
-   align-items: stretch;
-}
-#sidebar {
-   min-width: 250px;
-   max-width: 250px;
-   min-height: 100vh;
-}
 
-#sidebar.active {
-   margin-left: -250px;
-    min-height: 100vh;
-}
-a[data-toggle="collapse"] {
-   position: relative;
-}
-.dropdown-toggle::after {
-   display: block;
+
+ 
+
+ 
+ .side-navbar {
+   width: 180px;
+   height: 100%;
+   position: fixed;
+   margin-left: -200px;
+   background-color: #100901;
+   transition: 0.5s;
+ }
+ 
+ .nav-link:active,
+ .nav-link:focus,
+ .nav-link:hover {
+   background-color: #ffffff26;
+ }
+ 
+ .my-container {
+   transition: 0.4s;
+   
+ }
+ 
+ .active-nav {
+   margin-left: 0;
+ }
+ 
+ /* for main section */
+ .active-cont {
+   margin-left: 200px;
+   /* transition: 0.4s; */
+ }
+ 
+ #mbtn {
+   background-color: blue;
+   color: #fff;
+   position: fixed;
+   z-index: 100;
+   margin-left: 10px;
+   margin-top: 10px;
+   
+   
+ }
+ 
+ .my-container input {
+   border-radius: 2rem;
+   padding: 2px 20px;
+ }
+ .contact{
    position: absolute;
-   top: 50%;
-   right: 20px;
-   transform: translateY(-50%);
-}
-.offcan_width{
-   width: 300px;
-}
+   right:13px;
+   top:135px;
+   
+ }
+ .profile{
+   position: absolute;
+   right: 10px;
+   top:90px
+   
+ }
+ .home{
+   position: absolute;
+   right: 10px;
+   top:47px
+
+ }
