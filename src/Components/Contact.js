@@ -30,7 +30,7 @@ class Contact extends Component {
           <Slide left duration={1000}>
             <div className="eight columns">
               <form action="" method="post" id="contactForm" name="contactForm">
-                <fieldset>
+                <fieldset className="text-center">
                   <div>
                     <label htmlFor="contactName">
                       {t('name')} <span className="required">*</span>

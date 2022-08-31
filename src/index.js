@@ -5,12 +5,13 @@ import { initReactI18next } from 'react-i18next';
 import i18n from "i18next";
 import LanguageDetector from "i18next-browser-languagedetector";
 import HttpApi from "i18next-http-backend";
-import Our from "./our";
+import User from './Components/User'
+
 
 
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { BrowserRouter } from 'react-router-dom';
+import { BrowserRouter,Route,Routes } from 'react-router-dom';
 
 
 i18n
@@ -46,9 +47,13 @@ i18n
   root.render(
     <React.StrictMode>
       <BrowserRouter>
+      <Routes>
+      <Route path="/" element={<App />} />      
+      <Route exact path="/User"element={<User/>}/>
+    </Routes>
    
 
-      <App />
+     
       </BrowserRouter>
     
     </React.StrictMode>

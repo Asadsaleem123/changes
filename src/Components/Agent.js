@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-import '../Components/style.css';
 import Icon from "../assets/user_icon.jpg";
 import i18n from "i18next";
 import { useTranslation } from "react-i18next";

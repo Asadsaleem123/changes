@@ -9,10 +9,6 @@ import LanguageDetector from  "i18next-browser-languagedetector";
 
 
 class Header extends Component {
-  
-   
-
-
   render() {
     if (!this.props.data) return null;
     
@@ -30,98 +26,62 @@ class Header extends Component {
       
       
       <header id="home">
-         
-        
-       
-    
-        
-       
         <ParticlesBg type="circle" bg={true} />
-        
-        <nav id="nav-wrap">
-        <div className=" bg-blue-600 ml-5 mt-10 justify-content space-between w-32 ">
-              
-              <button className="px-4  py-2 text-red-900" onClick={()=>i18next.changeLanguage('ar')}>Ar</button>
-              <button className="px-4 py-2 text-red-900" onClick={()=>i18next.changeLanguage("en")}>En</button>
-            
-          </div>
-          <div className="top-0 right-0 absolute w-15  mt-10 p-2 mr-7 rounded bg-slate-700">
-            <Link to="/signin"className="text-blue-900 rounded p-2 font-semibold">Signup</Link>
-            
-          </div>
-          <div className="top-0 right-0 absolute  bg-slate-700 w-15 p-2 mr-40 mt-10  rounded">
-          <Link to="/login"className="text-black-900 rounded p-10 font-semibold rounded px-2">Login</Link>
 
-          </div>
-          
-          
-        
-          
+        <nav id="nav-wrap">
           <a className="mobile-btn" href="#nav-wrap" title="Show navigation">
             Show navigation
           </a>
           <a className="mobile-btn" href="#home" title="Hide navigation">
             Hide navigation
           </a>
-          
 
-          <ul id="nav" className="nav">
+          <ul id="nav" className="nav d-inline">
         
           
 
-            <li className="smoothscroll">
-              <a  href="#home">
-               {t('home')}
+            <li className="current">
+              <a className="smoothscroll" href="#home">
+                Home
               </a>
             </li>
 
             <li>
-              <Link  to="/about">
-               {t('about')}
-              </Link>
+              <a className="smoothscroll" href="#about">
+                About
+              </a>
             </li>
 
             <li>
-              <Link  to="/resume">
-             {t('achievement')}
-              </Link>
+              <a className="smoothscroll" href="#resume">
+              Achievement
+              </a>
             </li>
 
             <li>
-              <Link  to="/portfolio">
-                {t('works')}
-              </Link>
+              <a className="smoothscroll" href="#portfolio">
+                Works
+              </a>
             </li>
 
             <li>
-              <Link to="/contact">
-                {t('contact')}
-              </Link>
+              <a className="smoothscroll" href="#contact">
+                Contact
+              </a>
             </li>
-            
-            
-
           </ul>
-          
-         
-          
         </nav>
-        
-        
-        
 
         <div className="row banner">
-
           <div className="banner-text">
-          
             <Fade bottom>
             <img id="homelogo" src="images/logo.png" width="65%"  ></img>
             </Fade>
             <Fade bottom duration={1200}>
-              <h3>{t('description')}.</h3>
+              <h3>{description}.</h3>
             </Fade>
             <hr />
-            
+        
           </div>
         </div>
 

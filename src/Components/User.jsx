@@ -3,12 +3,31 @@ import logo from "../assets/xlogo.jpg";
 
 function User() {
   // var menu_btn = document.getElementById("#menu-btn");
-  var sidebar = document.getElementById("sidebar");
-  var container = document.querySelector(".my-container");
+  
+ 
   function Button() {
-    sidebar.classList.toggle("active-nav");
-    container.classList.toggle("active-cont");
+    // useEffect(()=>{
+      var check=document.getElementById('sidebar');
+      var p=check.classList;
+    if(check.classList.contains('open-nav')){
+      check.classList.remove('open-nav');
+      check.classList.add('close-nav');
+    }else if(check.classList.contains('close-nav')){
+      check.classList.add("open-nav");
+      check.classList.remove('close-nav');
+  
+    }
+     
+    
+    
+  
+    // },[])
+    
+   
+    
+   
   }
+  
 
   //   var home=document.getElementById('home');
 
@@ -42,11 +61,11 @@ function User() {
       </div>
       <div className="row">
         <div
-          className=" col-sm-2  col-md-2 col-lg-2 col-xl-2 col-xxl-2 customRow d-inline justify-content-between flex-wrap flex-column active-nav side-navbar"
+          className=" col-sm-2  col-md-2 col-lg-2 col-xl-2 col-xxl-2 customRow d-inline justify-content-between flex-wrap flex-column open-nav   side-navbar"
           id="sidebar"
         >
           <ul className="nav flex-column text-white">
-            <div className=" active-cont my-containe">
+            <div className=" active-cont my-container">
               <a className="btn border-0 " id="mbtn" onClick={Button}>
                 <i className="bx bx-menu "></i>
               </a>

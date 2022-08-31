@@ -731,7 +731,7 @@ properly.
       margin-top: -10px;
       
     }
-    .active-cont {
+    .active-cont_btn {
       margin-left: 99px;
       /* transition: 0.4s; */
     }
@@ -1079,31 +1079,42 @@ properly.
  }
  
  .my-container {
-   transition: 0.4s;
-   
+   transition: 0.4s; 
  }
- 
- .active-nav {
-   margin-left: 0;
+
+ .close-nav {
+   margin-left:-100px;
+   transition: 0.8s;
+ } 
+ .open-nav{
+   margin-left:0;
+   transition: 0.8s;
  }
+
+  /* for main section */
  
- /* for main section */
- 
- 
+ .active-cont{
+   margin-left: 107px;
+ }
  #mbtn {
    background-color: blue;
    color: #fff;
    /* position: fixed; */
    z-index: 100;
    margin-left: 10px;
-   margin-top: 10px;
-   
-   
+   margin-top: 10px; 
  }
  
  .my-container input {
    border-radius: 2rem;
    padding: 2px 20px;
+ }
+ .side-navbar {
+   height: 100%;
+   position: fixed;
+   background-color: #100901;
+   
+   
  }
  
  
