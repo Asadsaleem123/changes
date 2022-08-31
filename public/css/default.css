@@ -708,22 +708,13 @@ properly.
    .first { clear: none; }
    .s-first { clear: left; }
    .customRow{
-      width: 20%!important;
-      flex-shrink: 0;
-      max-width: 15%;
-      padding-right: calc(var(--bs-gutter-x)/ 2);
-      padding-left: calc(var(--bs-gutter-x)/ 2);
-      margin-top: var(--bs-gutter-y);
-     }
-     .side-navbar {
-      width: 14% !important;
+      width: 14%!important; 
       height: 100%;
       position: fixed;
-      margin-left: -100px;
       background-color: #100901;
-      transition: 0.5s;
-      font-size: 14px;
-    }
+
+     }
+  
     .logo{
       width: 155px;
       height:45px;
@@ -731,10 +722,32 @@ properly.
       margin-top: -10px;
       
     }
-    .active-cont_btn {
-      margin-left: 99px;
+    .close-nav {
+      margin-left: -105px;
+      transition: 0.8s;
+    } 
+    .open-nav{
+      margin-left:30;
+      transition: 0.8s;
+    }
+    .active-cont {
+      margin-left: 225px;
       /* transition: 0.4s; */
     }
+    .side_cont{
+      font-size: 15px;
+    }
+    #mbtn {
+      background-color: blue;
+      color: #fff;
+      /* position: fixed; */
+      z-index: 100;
+      margin-left: -110px;
+      margin-top: 8px; 
+      width: 22px;
+      height: 22px;
+    }
+    
     .contact{
       position: absolute;
       right:10px;
@@ -888,14 +901,18 @@ properly.
    .row { width: auto; }
    .customRow{
     width: 14%!important;
+    height: 100%;
+   position: fixed;
+   background-color:black;
    
    }
-   .side-navbar {
-      height: 100%;
-      position: fixed;
-      margin-left: -43px;
-      background-color: #100901;
-      transition: 0.5s;
+   .close-nav {
+      margin-left: -44px;
+      transition: 0.8s;
+    } 
+    .open-nav{
+      margin-left:30;
+      transition: 0.8s;
     }
     .logo{
       width: 93px;
@@ -905,12 +922,22 @@ properly.
       
     }
     .active-cont {
-      margin-left: 30px;
-      /* transition: 0.4s; */
+      margin-left: 150px;
     }
+    #mbtn {
+      background-color: blue;
+      color: #fff;
+      /* position: fixed; */
+      z-index: 100;
+      margin-left: -110px;
+      margin-top: 8px; 
+      width: 22px;
+      height: 22px;
+    }
+    
     .topbar{
       height: 3rem;
-      width: 100%;
+      
     }
     .contact{
       position: absolute;
@@ -930,7 +957,7 @@ properly.
       font-size: 10px;
     }
     .side_cont{
-      font-size: 10px;
+      font-size: 8px;
     }
     h3{
       display: flex;  
@@ -955,6 +982,98 @@ properly.
 
 }
 
+@media only screen and (min-width: 414px) {
+
+   .row { width: auto; }
+   .customRow{
+    width: 16%!important;
+    height: 100%;
+   position: fixed;
+   background-color:black;
+   
+   }
+   .close-nav {
+      margin-left: -40px;
+      transition: 0.8s;
+    } 
+    .open-nav{
+      margin-left:30;
+      transition: 0.8s;
+    }
+    .logo{
+      width: 97px;
+      height:33px;
+      position: fixed;
+      margin-top: -10px;
+      
+    }
+    .active-cont {
+      margin-left: 150px;
+    }
+    #mbtn {
+      background-color: blue;
+      color: #fff;
+      /* position: fixed; */
+      z-index: 100;
+      margin-left: -110px;
+      margin-top: 8px; 
+      width: 22px;
+      height: 22px;
+    }
+    
+    .topbar{
+      height: 3rem;
+      
+    }
+    .contact{
+      position: absolute;
+      right:5px;
+      top:125px;
+      
+    }
+    .profile{
+      position: absolute;
+      right: 5px;
+      top:83px;
+    }
+    .home{
+      position: absolute;
+      right: 10px;
+      top:43px;
+      font-size: 10px;
+    }
+    .side_cont{
+      font-size: 8px;
+    }
+    h3{
+      display: flex;  
+      position: absolute;
+      flex-wrap: wrap;
+      width: 100%;
+      margin-left:100px;
+      font-size: 8px !important;
+    }
+    .lang_btn{
+      /* position: relative; */
+      float: right;
+      width: 20px;
+      height: 10px;
+      margin-right: 40px;
+      margin-bottom: 5px;
+      background-color: rgb(121, 121, 231);
+      line-height: 1em;
+      padding: 0px;
+    }
+    .btn_lng_spc{
+      margin-left: 80px;
+      
+      margin-top: 3px;
+    }
+   
+   
+
+}
+
 
 /* larger screens
 --------------------------------------------------------------- */
@@ -963,19 +1082,24 @@ properly.
    .wide .row { max-width: 1180px; }
    .customRow{
       width: 10%!important;
+      height: 100%;
+      position: fixed;
+      background-color: black;
+     
       
      }
      .topbar{
       height: 4rem;
     }
-     .side-navbar {
-      /* width: 100%; */
-      height: 100%;
-      position: fixed;
-      margin-left: -100px;
-      background-color: #100901;
-      transition: 0.5s;
+    .close-nav {
+      margin-left:-100px;
+      transition: 0.8s;
+    } 
+    .open-nav{
+      margin-left:0;
+      transition: 0.8s;
     }
+ 
     .logo{
       width: 161px;
       height:40px;
@@ -987,6 +1111,14 @@ properly.
     .active-cont {
       margin-left: 105px;
       /* transition: 0.4s; */
+    }
+    #mbtn {
+      background-color: blue;
+      color: #fff;
+      /* position: fixed; */
+      z-index: 100;
+      margin-left: 10px;
+      margin-top: 10px; 
     }
     .contact{
       position: absolute;
@@ -1082,40 +1214,12 @@ properly.
    transition: 0.4s; 
  }
 
- .close-nav {
-   margin-left:-100px;
-   transition: 0.8s;
- } 
- .open-nav{
-   margin-left:0;
-   transition: 0.8s;
- }
+ 
 
-  /* for main section */
- 
- .active-cont{
-   margin-left: 107px;
- }
- #mbtn {
-   background-color: blue;
-   color: #fff;
-   /* position: fixed; */
-   z-index: 100;
-   margin-left: 10px;
-   margin-top: 10px; 
- }
- 
  .my-container input {
    border-radius: 2rem;
    padding: 2px 20px;
- }
- .side-navbar {
-   height: 100%;
-   position: fixed;
-   background-color: #100901;
-   
-   
- }
+ } 
  
  
  
